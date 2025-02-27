@@ -16,6 +16,11 @@ app.get('/', (req, res) => {
   res.send('Hello World');
 });
 
+app.get('/test', (req, res) => {
+  console.log('Test');
+  res.send('Test');
+});
+
 // Objeto para almacenar usuarios conectados
 const usuarios = {};
 // Objeto para almacenar canales disponibles
