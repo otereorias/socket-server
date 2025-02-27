@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "server/socket-server.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/socket.io/.*",
+      "dest": "server/socket-server.ts"
+    }
+  ]
+} 
